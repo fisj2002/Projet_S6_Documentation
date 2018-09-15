@@ -1,0 +1,133 @@
+% !TEX TS-program = pdflatexmk
+% !TEX encoding = UTF-8 Unicode
+\documentclass[12pt,titlepage=true,letterpaper,pointlessnumbers,headings=normal,captions=nooneline]{scrartcl}
+
+\usepackage[french]{babel}
+\selectlanguage{french}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[automark,markcase=upper]{scrlayer-scrpage}
+\usepackage[protrusion=true,expansion]{microtype}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array,booktabs,longtable,tabularx}
+\usepackage{arydshln}
+\usepackage{dashrule}
+\usepackage[squaren,cdot,textstyle]{SIunits}
+\usepackage{ccicons}
+\usepackage{enumerate}
+\usepackage{url}
+
+\usepackage{xcolor}
+\definecolor{myred}{rgb}{.7,.13,.13}
+\definecolor{myyellow}{rgb}{1,1,.79}
+\definecolor{monbleu}{rgb}{.2,.4,.8}
+
+\definecolor{vertUdS}{RGB}{0,119,73} % Pantone vert 3415
+\definecolor{bleuTetrad}{RGB}{0,45,117} % Pantone Tetrad
+\definecolor{rougTetrad}{RGB}{117,0,45} % Pantone Tetrad
+\definecolor{oranTetrad}{RGB}{117,72,0} % Pantone Tetrad
+
+% Sérif: lining figures in math, osf in text
+\usepackage[scaled=.98,sups,osf]{XCharter}% 
+% Sans sérif:
+\usepackage[scaled=0.90]{helvet}%
+% Mono:
+\usepackage[scaled=0.85]{beramono}
+% Math:
+\usepackage[charter,bigdelims,vvarbb,scaled=1.07]{newtxmath}
+\usepackage[cal=boondoxo]{mathalfa} % doc à regarder: intéressant.
+
+% Math: autre \usepackage[osf,sc]{mathpazo}
+
+\linespread{1.1}
+
+% À voir:
+%\DeclareFixedFont{\FonteTitre}{T1}{phv}{b}{n}{48pt}
+\usepackage{pifont}
+
+% Dimension de la page:
+\setlength{\textheight}{672pt}
+\setlength{\footskip}{24pt}
+
+% Réglage de certaine apparence:
+% Caption
+\setkomafont{caption}{\sffamily}
+\setkomafont{captionlabel}{\bfseries}
+\setcapindent{0em}
+% titre: section et autre
+\addtokomafont{section}{%
+	\color{rougTetrad}%
+	\usesizeofkomafont{subsection}%
+	}%
+% Entête et pied de page:
+\ihead{}
+\chead{}
+\ohead{\sffamily\scriptsize\scshape\textls[150]{\headmark}}
+\ifoot{}
+\cfoot{}
+\ofoot{\normalfont\sffamily\small\thepage}
+\renewcommand*{\sectionmarkformat}{}% pas de numéro de section
+
+% Pas d'indentation
+\setlength{\parindent}{0pt}
+
+\begin{document}
+%%% Titre
+\thispagestyle{empty}
+\noindent
+\begin{center}
+{\scshape \textls[150]{Université de Sherbrooke}\\[4pt] \textls[75]{Département de génie électrique et de génie informatique}}
+
+\vspace{3cm}
+\textsf{\large Session S6e 2018}
+
+\vspace{.5cm}
+\textsf{\Large Dossier de conception du projet de session}
+
+\vspace{.3cm}
+\textsf{\large Équipe P3}
+
+\vspace{.25cm}
+\textsf{\footnotesize remis le 20 septembre 2018}
+
+\end{center}
+\vfill
+
+\noindent
+\rule{\linewidth}{.8pt}
+
+\noindent
+Abibsi, Amazigh \hfill abia2601\\
+Bouchard, Raphael \hfill bour2326\\
+Carignan, Charles \hfill carc2923\\
+Courtois, Sébastien \hfill cous2509\\
+Denommée, Édouard \hfill dene2303\\
+Fisher, Jeffrey \hfill fisj2002\\
+Houde, Marc-Antoine \hfill houm3306\\
+
+
+\newpage
+\tableofcontents
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+
+
+\newpage
+\section{Contexte du projet et du marché}
+
+\section{Cahier de charges fonctionnelles}
+
+\section{Requis au niveau RF}
+
+\section{Prototype/preuve de concept de S6}
+
+\section{Outils de gestion}
+
+
+\end{document}
