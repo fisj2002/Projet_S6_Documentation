@@ -127,16 +127,26 @@ Houde, Marc-Antoine \hfill houm3306\\
 \section{Requis au niveau RF}
 
 \section{Prototype/preuve de concept de S6}
-Afin de pouvoir prouver la fonctionnalité de notre produit et en démontrer son impact, l'équipe produira une platforme de prototype qui incorpore les éléments clé du produit final. Les éléments qui y seront inclus seront entre autres:
+Afin de pouvoir prouver la fonctionnalité de notre produit et en démontrer son impact, l'équipe produira une platforme de prototype qui incorpore les éléments clé du produit final. Les éléments qui y seront inclus seront les suivants:
 \begin{itemize}
-	\item Les capteurs dans la ruche d'abeille:
+	\item Les capteurs dans la ruche d'abeille:\\
+	Ces capteurs seront du même côté de la chaine de transmission et permettront de tester l'interaction de l'application avec une suite de senseurs et actuateurs qui pourraient s'avérer pertinent à l'application en développement.
 	\begin{itemize}
 		\item Capteurs de température
-		\item Détecteur de mouvement
+		\item Capteur GPS
+		\item Capteur de poids
+		\item Actuateur de preuve de concept
 	\end{itemize}
+	\item Application pour utilisateur:\\
+	À l'autre extrémité de la chaîne de transmission se trouvera un terminal où un utilisateur pourra agréger les données des capteurs et commander les actuateurs. Cette implémentation sera simpliste afin d'en démontrer la possibilité.
+	\item Chaîne de transmission sans fil:\\
+	Cette composante du projet consistera à démontrer la configuration d'un canal de communication bi-directionel.
 \end{itemize}
 \medskip
-La chaîne RF étant l'élément principal de la conception, une attention particulière sera portée à son fonctionnement car elle est une composante critique du produit.
+La chaîne RF étant l'élément principal de la conception, une attention particulière sera portée à son fonctionnement car elle est une composante critique du produit.\\
+Plusieurs éléments d'un produit viables ne seront pas considéré pour la création d'un prototype. Par exemple, des détecteurs de pathogènes menacent pour les abeilles seraient très efficace dans la mission de conservation que se produit essaie de remplir. 
+D'autres types de capteurs et actuateurs spécifiques aux environnements des ruches pourraient grandement améliorer la viabilité et les fonctionnalités possibles pour les apiculteurs.
+Une interface complète avec des bases de données et des fonctions d'analyses de haut-niveau permettraient aussi aux apiculteurs de gérer leurs opérations de façon plus intelligente.
 
 \section{Outils de gestion}
 
